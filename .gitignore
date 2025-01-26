@@ -1,0 +1,14 @@
+# Virtual environment
+.venv/
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Large model files
+model/
+model_tokenizer/
+
+# Logs and temporary files
+*.log
+*.tmp
