@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONPATH=/app/src:/app
+
+  web:
+    build: .
+    command: ["python", "main.py", "web"]
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONPATH=/app/src:/app

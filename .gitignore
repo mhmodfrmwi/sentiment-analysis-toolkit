@@ -1,14 +1,31 @@
 # Virtual environment
 .venv/
+venv/
 
 # Byte-compiled files
 __pycache__/
 *.py[cod]
+*.egg-info/
+dist/
+build/
 
-# Large model files
-model/
-model_tokenizer/
+# Model artifacts (download or train locally)
+models/sentiment-model/
+test_trainer/
+final_model/
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
 
 # Logs and temporary files
 *.log
 *.tmp
+
+# Streamlit
+.streamlit/secrets.toml
